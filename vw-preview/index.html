@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a1f3d">
 <title>Versatile Wills | Wills, LPAs & Estate Planning Specialists London</title>
-<meta name="description" content="Wills, Lasting Powers of Attorney, and Trusts handled with care. Free 15-minute consultation, no hidden fees. Backed by STEP-qualified expertise.">
+<meta name="description" content="Wills, Lasting Powers of Attorney, and Trusts handled with care. Free 15-minute consultation, no hidden fees.">
 <meta name="robots" content="index, follow">
+<meta property="og:title" content="Versatile Wills | Estate Planning Specialists London">
+<meta property="og:description" content="Wills, LPAs and Trusts handled with care. Free 15-minute consultation, no hidden fees.">
+<meta property="og:type" content="website">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;overflow-x:hidden;width:100%}
@@ -17,15 +20,19 @@ button,input,textarea{font-family:inherit;font-size:inherit}
 :root{--navy-deep:#0a1f3d;--navy:#15315a;--gold:#c9a14a;--gold-bright:#e0b95d;--gold-deep:#a8842f;--cream:#faf6ee;--cream-warm:#f4ecd8;--paper:#fefcf7;--ink:#1a1f2e;--ink-soft:#4a5163;--line:rgba(10,31,61,.12)}
 h1,h2,h3,h4{font-family:ui-serif,Charter,Baskerville,"Times New Roman",serif;font-weight:500;letter-spacing:-.015em;color:var(--navy-deep);line-height:1.15}
 .container{max-width:1200px;margin:0 auto;padding:0 20px}
-.announcement{background:var(--navy-deep);color:var(--cream);font-size:12px;padding:8px 16px;text-align:center;letter-spacing:.02em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+.announcement{display:block;background:var(--navy-deep);color:var(--cream);font-size:12px;padding:9px 16px;text-align:center;letter-spacing:.02em;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;text-decoration:none;transition:background .15s}
+.announcement:hover,.announcement:active{background:#0d2549}
 .announcement strong{color:var(--gold-bright);font-weight:600}
-header{background:rgba(254,252,247,.97);border-bottom:1px solid var(--line);padding:14px 0;position:sticky;top:0;z-index:100;backdrop-filter:saturate(180%) blur(8px);-webkit-backdrop-filter:saturate(180%) blur(8px)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.logo{font-family:ui-serif,Charter,Baskerville,serif;font-weight:600;font-size:22px;color:var(--navy-deep);text-decoration:none;display:flex;align-items:center;gap:8px;flex-shrink:0}
-.logo-mark-svg{width:34px;height:34px;color:var(--gold-deep);flex-shrink:0}
-.header-phone{display:inline-flex;align-items:center;gap:8px;color:var(--navy-deep);text-decoration:none;font-weight:600;font-size:15px;padding:8px 14px;border-radius:100px;background:var(--cream-warm);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;white-space:nowrap}
-.header-phone-icon{width:24px;height:24px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
-.hero{background:linear-gradient(135deg,var(--cream) 0%,var(--cream-warm) 100%);padding:48px 0 56px;position:relative;overflow:hidden}
+header{background:rgba(254,252,247,.97);border-bottom:1px solid var(--line);padding:12px 0;position:sticky;top:0;z-index:100;backdrop-filter:saturate(180%) blur(8px);-webkit-backdrop-filter:saturate(180%) blur(8px)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}
+@media (min-width:768px){header{padding:14px 0}.header-inner{gap:16px}}
+.logo{font-family:ui-serif,Charter,Baskerville,serif;font-weight:600;font-size:19px;color:var(--navy-deep);text-decoration:none;display:flex;align-items:center;gap:8px;flex-shrink:1;min-width:0}
+.logo-mark-svg{width:30px;height:30px;color:var(--gold-deep);flex-shrink:0}
+@media (min-width:480px){.logo{font-size:22px}.logo-mark-svg{width:34px;height:34px}}
+.header-phone{display:inline-flex;align-items:center;gap:7px;color:var(--navy-deep);text-decoration:none;font-weight:600;font-size:14px;padding:7px 12px;border-radius:100px;background:var(--cream-warm);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;white-space:nowrap;flex-shrink:0}
+.header-phone-icon{width:22px;height:22px;background:var(--gold);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
+@media (min-width:480px){.header-phone{font-size:15px;padding:8px 14px;gap:8px}.header-phone-icon{width:24px;height:24px}}
+.hero{background:linear-gradient(135deg,var(--cream) 0%,var(--cream-warm) 100%);padding:42px 0 36px;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;top:-30%;right:-30%;width:500px;height:500px;background:radial-gradient(circle,rgba(201,161,74,.18) 0%,transparent 65%);border-radius:50%;pointer-events:none;z-index:0}
 .hero .container{position:relative;z-index:1}
 .hero h1{font-size:clamp(34px,8vw,58px);margin-bottom:18px}
@@ -33,34 +40,18 @@ header{background:rgba(254,252,247,.97);border-bottom:1px solid var(--line);padd
 .hero p.lead{font-size:17px;color:var(--ink-soft);line-height:1.55;margin-bottom:28px;max-width:540px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(10,31,61,.07);padding:6px 12px;border-radius:100px;font-size:11px;font-weight:600;color:var(--navy-deep);letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .hero-eyebrow::before{content:"";width:6px;height:6px;background:var(--gold);border-radius:50%}
-.cta-group{display:flex;flex-direction:column;gap:10px;margin-bottom:32px}
+.cta-group{display:flex;flex-direction:column;gap:10px}
 .cta-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 24px;border-radius:100px;font-size:16px;font-weight:600;text-decoration:none;border:none;cursor:pointer;min-height:52px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;transition:transform .15s}
 .cta-btn:active{transform:scale(.98)}
 .cta-primary{background:var(--navy-deep);color:var(--cream);box-shadow:0 3px 14px rgba(10,31,61,.22)}
 .cta-whatsapp{background:#25d366;color:#fff;box-shadow:0 3px 14px rgba(37,211,102,.25)}
 .cta-gold{background:var(--gold);color:var(--navy-deep);box-shadow:0 3px 14px rgba(201,161,74,.3)}
-.trust-row{display:flex;flex-wrap:wrap;gap:8px;padding-top:24px;border-top:1px solid var(--line)}
-.trust-item{display:inline-flex;align-items:center;gap:6px;font-size:12px;color:var(--ink-soft);font-weight:600;background:rgba(10,31,61,.04);padding:6px 12px;border-radius:100px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-.trust-dot{width:6px;height:6px;background:var(--gold-deep);border-radius:50%;flex-shrink:0}
-.step-section{background:linear-gradient(180deg,var(--paper) 0%,var(--cream) 100%);padding:48px 0}
-.step-inner{max-width:880px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center}
-.step-badge{display:inline-flex;align-items:center;gap:14px;padding:14px 22px;background:var(--paper);border:1.5px solid var(--gold);border-radius:100px;box-shadow:0 4px 18px rgba(168,132,47,.12)}
-.step-badge-letters{font-family:ui-serif,Charter,Baskerville,serif;font-weight:700;font-size:28px;color:var(--gold-deep);letter-spacing:.06em;line-height:1}
-.step-badge-tagline{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:10px;font-weight:600;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase;line-height:1.3;text-align:left}
-.step-badge-tagline span{display:block;color:var(--navy-deep);font-size:13px;font-weight:700;text-transform:none;letter-spacing:0;margin-bottom:1px;font-family:ui-serif,Charter,Baskerville,serif}
-.step-headline{font-family:ui-serif,Charter,Baskerville,serif;font-size:clamp(24px,4.5vw,32px);font-weight:500;color:var(--navy-deep);line-height:1.2;max-width:680px}
-.step-headline em{color:var(--gold-deep);font-style:italic}
-.step-copy{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:15px;color:var(--ink-soft);line-height:1.65;max-width:620px}
-.step-copy strong{color:var(--navy-deep);font-weight:600}
 .acc-marquee{background:var(--paper);padding:32px 0;overflow:hidden;position:relative;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.acc-marquee-label{text-align:center;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:10px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);opacity:.6;margin-bottom:24px}
 .acc-marquee::before,.acc-marquee::after{content:"";position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none}
 .acc-marquee::before{left:0;background:linear-gradient(90deg,var(--paper) 0%,transparent 100%)}
 .acc-marquee::after{right:0;background:linear-gradient(270deg,var(--paper) 0%,transparent 100%)}
-.acc-track{display:flex;gap:72px;animation:acc-scroll 28s linear infinite;width:max-content;align-items:center}
-.acc-track:hover{animation-play-state:paused}
-.acc-logo{display:flex;align-items:center;justify-content:center;height:60px;opacity:.85;transition:opacity .2s;flex-shrink:0}
-.acc-logo:hover{opacity:1}
+.acc-track{display:flex;gap:72px;animation:acc-scroll 32s linear infinite;width:max-content;align-items:center}
+.acc-logo{display:flex;align-items:center;justify-content:center;height:60px;flex-shrink:0}
 .logo-step{display:flex;align-items:center;gap:12px}
 .logo-step-mark{width:50px;height:50px;border:2px solid #5d4789;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-weight:700;font-size:13px;color:#5d4789;flex-shrink:0;background:#fff}
 .logo-step-text{display:flex;flex-direction:column;line-height:1.1}
@@ -80,6 +71,16 @@ header{background:rgba(254,252,247,.97);border-bottom:1px solid var(--line);padd
 .logo-eps-sub{font-family:-apple-system,BlinkMacSystemFont,sans-serif;font-size:7.5px;font-weight:600;color:var(--gold-deep);letter-spacing:.15em;text-transform:uppercase;margin-top:4px}
 @keyframes acc-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion:reduce){.acc-track{animation:none}}
+.step-section{background:linear-gradient(180deg,var(--paper) 0%,var(--cream) 100%);padding:48px 0}
+.step-inner{max-width:880px;margin:0 auto;padding:0 20px;display:flex;flex-direction:column;gap:24px;align-items:center;text-align:center}
+.step-badge{display:inline-flex;align-items:center;gap:14px;padding:14px 22px;background:var(--paper);border:1.5px solid var(--gold);border-radius:100px;box-shadow:0 4px 18px rgba(168,132,47,.12)}
+.step-badge-letters{font-family:ui-serif,Charter,Baskerville,serif;font-weight:700;font-size:28px;color:var(--gold-deep);letter-spacing:.06em;line-height:1}
+.step-badge-tagline{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:10px;font-weight:600;color:var(--ink-soft);letter-spacing:.06em;text-transform:uppercase;line-height:1.3;text-align:left}
+.step-badge-tagline span{display:block;color:var(--navy-deep);font-size:13px;font-weight:700;text-transform:none;letter-spacing:0;margin-bottom:1px;font-family:ui-serif,Charter,Baskerville,serif}
+.step-headline{font-family:ui-serif,Charter,Baskerville,serif;font-size:clamp(24px,4.5vw,32px);font-weight:500;color:var(--navy-deep);line-height:1.2;max-width:680px}
+.step-headline em{color:var(--gold-deep);font-style:italic}
+.step-copy{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;font-size:15px;color:var(--ink-soft);line-height:1.65;max-width:620px}
+.step-copy strong{color:var(--navy-deep);font-weight:600}
 section{padding:56px 0}
 .section-eyebrow{font-size:11px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:14px;display:inline-block;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .section-title{font-size:clamp(28px,6vw,44px);margin-bottom:16px;max-width:700px}
@@ -147,7 +148,7 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 .footer-col a,.footer-col p{display:block;color:rgba(250,246,238,.75);text-decoration:none;font-size:14px;line-height:1.8;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .footer-bottom{padding-top:24px;border-top:1px solid rgba(250,246,238,.12);display:flex;flex-direction:column;gap:10px;font-size:12px;color:rgba(250,246,238,.5);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .footer-bottom a{color:rgba(250,246,238,.5);text-decoration:none}
-@media (min-width:768px){body{font-size:17px}.container{padding:0 32px}.hero{padding:80px 0 90px}.hero h1{font-size:clamp(44px,5.5vw,64px)}.hero p.lead{font-size:19px}.cta-group{flex-direction:row;flex-wrap:wrap}.cta-btn{flex:1;min-width:200px}.final-cta .cta-group{justify-content:center}section{padding:90px 0}.step-section{padding:64px 0}.step-copy{font-size:16px}.acc-marquee{padding:44px 0}.acc-logo{height:68px}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.why-card{padding:32px 28px}.why-icon{width:52px;height:52px;font-size:22px}.why-card h3{font-size:23px}.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.service-card{padding:30px}.service-num{font-size:42px}.service-content h3{font-size:22px}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.step-card{flex-direction:column;text-align:center;align-items:center;gap:16px}.step-num-wrap{width:72px;height:72px}.step-num{font-size:32px}.step-card h3{font-size:22px}.form-section .container{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.form-card{padding:42px}.form-card h3{font-size:28px}details summary{font-size:21px;padding:22px 40px 22px 0}details p{font-size:16px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}.footer-bottom{flex-direction:row;justify-content:space-between;align-items:center}}
+@media (min-width:768px){body{font-size:17px}.container{padding:0 32px}.hero{padding:72px 0 60px}.hero h1{font-size:clamp(44px,5.5vw,64px)}.hero p.lead{font-size:19px}.cta-group{flex-direction:row;flex-wrap:wrap}.cta-btn{flex:1;min-width:200px}.final-cta .cta-group{justify-content:center}section{padding:90px 0}.step-section{padding:64px 0}.step-copy{font-size:16px}.acc-marquee{padding:44px 0}.acc-logo{height:68px}.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.why-card{padding:32px 28px}.why-icon{width:52px;height:52px;font-size:22px}.why-card h3{font-size:23px}.services-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.service-card{padding:30px}.service-num{font-size:42px}.service-content h3{font-size:22px}.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.step-card{flex-direction:column;text-align:center;align-items:center;gap:16px}.step-num-wrap{width:72px;height:72px}.step-num{font-size:32px}.step-card h3{font-size:22px}.form-section .container{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}.form-card{padding:42px}.form-card h3{font-size:28px}details summary{font-size:21px;padding:22px 40px 22px 0}details p{font-size:16px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px}.footer-bottom{flex-direction:row;justify-content:space-between;align-items:center}}
 .cookie-banner{position:fixed;bottom:0;left:0;right:0;background:var(--navy-deep);color:var(--cream);padding:16px 18px calc(16px + env(safe-area-inset-bottom,0px));z-index:200;box-shadow:0 -4px 20px rgba(0,0,0,.2);transform:translateY(100%);transition:transform .3s ease-out;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
 .cookie-banner.visible{transform:translateY(0)}
 .cookie-inner{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
@@ -161,7 +162,7 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 </head>
 <body>
 
-<div class="announcement"><strong>Free 15-minute consultation</strong> · Backed by STEP-qualified expertise</div>
+<a href="tel:+442039303430" class="announcement"><strong>Free 15-minute consultation</strong> · Trusted expertise in wills and estate planning</a>
 
 <header>
 <div class="container header-inner">
@@ -177,30 +178,13 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 <p class="lead">Whether you've just had a baby, bought a home, or simply realised it's time, we'll write a will that protects exactly what matters to you. Honest advice. Plain English. No hidden fees.</p>
 <div class="cta-group">
 <a href="tel:+442039303430" class="cta-btn cta-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call us now</a>
-<a href="https://wa.me/447400763370?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20will" class="cta-btn cta-whatsapp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>WhatsApp us</a>
+<a href="https://wa.me/442039303430?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20will" class="cta-btn cta-whatsapp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413"/></svg>WhatsApp us</a>
 <a href="#callback" class="cta-btn cta-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Request a callback</a>
 </div>
-<div class="trust-row">
-<span class="trust-item"><span class="trust-dot"></span>STEP qualified</span>
-<span class="trust-item"><span class="trust-dot"></span>Society of Will Writers</span>
-<span class="trust-item"><span class="trust-dot"></span>Fully insured work</span>
-</div>
-</div>
-</section>
-
-<section class="step-section">
-<div class="step-inner">
-<div class="step-badge">
-<span class="step-badge-letters">STEP</span>
-<span class="step-badge-tagline"><span>Society of Trust and Estate Practitioners</span>Global standard in estate planning</span>
-</div>
-<h2 class="step-headline">Backed by <em>STEP-qualified</em> expertise.</h2>
-<p class="step-copy">Our team includes a <strong>STEP-qualified practitioner</strong> (Trust and Estate Practitioner) alongside qualified legal professionals. STEP is the global professional body for trust and estate specialists, with membership requiring advanced qualifications, ongoing professional development, and adherence to a strict code of conduct. The right specialist is matched to your matter, from straightforward wills to complex trusts and inheritance tax planning.</p>
 </div>
 </section>
 
 <div class="acc-marquee" aria-label="Accreditations">
-<div class="container"><div class="acc-marquee-label">Recognised accreditations</div></div>
 <div class="acc-track">
 <div class="acc-logo logo-step"><div class="logo-step-mark">TEP</div><div class="logo-step-text"><span class="logo-step-text-main">STEP</span><span class="logo-step-text-sub">Society of Trust & Estate Practitioners</span></div></div>
 <div class="acc-logo logo-sww"><div class="logo-sww-mark"><svg viewBox="0 0 46 50" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M23 1 L42 8 V26 C42 36 33 45 23 49 C13 45 4 36 4 26 V8 Z" fill="none" stroke="currentColor" stroke-width="2"/><text x="23" y="22" text-anchor="middle" font-family="Georgia,serif" font-size="11" font-weight="700" fill="currentColor">SWW</text><line x1="10" y1="28" x2="36" y2="28" stroke="currentColor" stroke-width="1"/><text x="23" y="38" text-anchor="middle" font-family="Georgia,serif" font-style="italic" font-size="7" fill="currentColor">est. 1994</text></svg></div><div class="logo-sww-text"><span class="logo-sww-text-main">Society of</span><span class="logo-sww-text-main">Will Writers</span></div></div>
@@ -212,6 +196,17 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 <div class="acc-logo logo-eps"><span class="logo-eps-main">Estate Planning</span><span class="logo-eps-sub">Specialists</span></div>
 </div>
 </div>
+
+<section class="step-section">
+<div class="step-inner">
+<div class="step-badge">
+<span class="step-badge-letters">STEP</span>
+<span class="step-badge-tagline"><span>Society of Trust and Estate Practitioners</span>Global standard in estate planning</span>
+</div>
+<h2 class="step-headline">Backed by <em>STEP-qualified</em> expertise.</h2>
+<p class="step-copy">Our team includes a <strong>STEP-qualified practitioner</strong> (Trust and Estate Practitioner) alongside qualified legal professionals. STEP is the global professional body for trust and estate specialists, with membership requiring advanced qualifications, ongoing professional development, and adherence to a strict code of conduct. The right specialist is matched to your matter, from straightforward wills to complex trusts and inheritance tax planning.</p>
+</div>
+</section>
 
 <section>
 <div class="container">
@@ -261,7 +256,7 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 <p class="section-intro">However you prefer to reach us, by phone, WhatsApp, or filling in the form, we'll come back to you the same working day.</p>
 <div class="form-contact-options">
 <a href="tel:+442039303430" class="contact-option"><div class="contact-option-icon">☏</div><div><div class="contact-option-label">Phone</div><div class="contact-option-value">020 3930 3430</div></div></a>
-<a href="https://wa.me/447400763370?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20will" class="contact-option" target="_blank" rel="noopener"><div class="contact-option-icon">⌬</div><div><div class="contact-option-label">WhatsApp</div><div class="contact-option-value">Message anytime</div></div></a>
+<a href="https://wa.me/442039303430?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20will" class="contact-option" target="_blank" rel="noopener"><div class="contact-option-icon">⌬</div><div><div class="contact-option-label">WhatsApp</div><div class="contact-option-value">Message anytime</div></div></a>
 <div class="contact-option" style="cursor:default"><div class="contact-option-icon">⌂</div><div><div class="contact-option-label">Office</div><div class="contact-option-value">77 Marsh Wall, London E14 9SH</div></div></div>
 </div>
 </div>
@@ -299,7 +294,7 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 <p>Free, no obligation, completely on your terms. Pick whichever way feels easiest.</p>
 <div class="cta-group">
 <a href="tel:+442039303430" class="cta-btn cta-primary"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call 020 3930 3430</a>
-<a href="https://wa.me/447400763370?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20will" class="cta-btn cta-whatsapp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51"/></svg>WhatsApp</a>
+<a href="https://wa.me/442039303430?text=Hi%2C%20I%27d%20like%20to%20enquire%20about%20a%20will" class="cta-btn cta-whatsapp" target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51"/></svg>WhatsApp</a>
 <a href="#callback" class="cta-btn cta-gold"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Request a callback</a>
 </div>
 </section>
@@ -309,7 +304,7 @@ footer{background:var(--navy-deep);color:var(--cream);padding:40px 0 24px}
 <div class="footer-grid">
 <div><div class="footer-logo-text" style="display:flex;align-items:center;gap:10px"><span style="width:32px;height:32px;color:var(--gold-bright);display:flex;align-items:center;justify-content:center"><svg viewBox="0 0 390 410" xmlns="http://www.w3.org/2000/svg" fill="currentColor"><path d="M194,369.88c-17.84-30.45-35.27-60.25-52.74-90Q80.83,176.94,20.46,74C14,63,7.65,51.9,1.11,40.92-.57,38.1-.67,37,3.15,37.05c25.47.09,50.94-.28,76.41.6,6.52.23,10.11,4.47,13.06,9.46q20.3,34.31,40.47,68.66,50,85.32,99.85,170.7c3.23,5.52,3.76,11,.28,16.92-12.58,21.29-24.93,42.72-37.39,64.09A29.56,29.56,0,0,1,194,369.88Z"/><path d="M389.08,37.9C360,87.39,331,136.82,301.55,187.06c-6.24-10.53-12.06-20.32-17.85-30.12-7.95-13.44-16-26.83-23.74-40.36-1.93-3.35-2.84-3.76-5-.14-14.8,25.39-29.79,50.67-44.64,76-4,6.77-3.94,6.88-7.94.07q-18.15-30.91-36.2-61.91a11.65,11.65,0,0,1-.05-12.69Q188.66,79.45,211,40.87c2.07-3.57,3.15-3.24,5.08.06,13,22.21,26.15,44.33,39.11,66.56,1.94,3.32,2.85,3.79,5,.14,10.92-18.81,22-37.52,33.08-56.25a69.69,69.69,0,0,1,4.51-7.17c3.15-4.09,7-6.51,12.64-6.67,24.47-.7,48.94-.42,73.41-.42C385.4,37.12,387.09,36.63,389.08,37.9Z"/></svg></span>Versatile Wills</div><p class="footer-tagline">Wills, Lasting Powers of Attorney, and Trusts, handled with care by qualified Estate Planning Specialists.</p></div>
 <div class="footer-col"><h4>Services</h4><a href="#">Wills</a><a href="#">Lasting Power of Attorney</a><a href="#">Trusts</a><a href="#">Will Storage</a></div>
-<div class="footer-col"><h4>Contact</h4><a href="tel:+442039303430">020 3930 3430</a><a href="https://wa.me/447400763370">WhatsApp</a><p>77 Marsh Wall<br>London E14 9SH</p><p>Mon-Fri, 9am-5pm</p></div>
+<div class="footer-col"><h4>Contact</h4><a href="tel:+442039303430">020 3930 3430</a><a href="https://wa.me/442039303430">WhatsApp</a><p>77 Marsh Wall<br>London E14 9SH</p><p>Mon-Fri, 9am-5pm</p></div>
 <div class="footer-col"><h4>Follow</h4><a href="https://www.instagram.com/versatilewills/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/profile.php?id=61562580233048" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/versatile-wills/" target="_blank" rel="noopener">LinkedIn</a></div>
 </div>
 <div class="footer-bottom"><div>© 2026 Versatile Wills Limited · Company No. 15577368</div><div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a></div></div>
